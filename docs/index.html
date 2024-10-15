@@ -308,6 +308,51 @@
                 showSlide(currentSlide + 1);
             }, 5000);
         });
-    </script>
+    <script>
+    // Main carousel script
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSlide(currentSlide - 1);
+    });
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSlide(currentSlide + 1);
+    });
+
+    // View Gallery button script
+    document.querySelectorAll('a.btn-view-gallery').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.location.href = this.getAttribute('href');
+        });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
 
 </body></html>
