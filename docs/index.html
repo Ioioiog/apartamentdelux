@@ -83,13 +83,13 @@
                     <a href="apartament-a25.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
+            </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png') center/cover no-repeat;">
                 <div class="property-info">
                     <h2 class="text-xl font-bold mb-2">Apartament B.1.10 - Yacht Kid</h2>
                     <p><strong>Detalii:</strong> 2 camere | 52.4 mp utili | 65.0 mp totali | Etaj 1 | Corp B</p>
                     <p><strong>Descriere:</strong> Apartament modern în Yacht Kid, perfect pentru cupluri sau persoane singure. Dispune de un living mare și un dormitor confortabil, cu balcon de 12.6 mp.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
-                    <a href="apartament-b110.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/3p.png') center/cover no-repeat;">
@@ -98,7 +98,6 @@
                     <p><strong>Detalii:</strong> 2 camere | 51.1 mp utili | 63.8 mp totali | Etaj 2 | Corp B</p>
                     <p><strong>Descriere:</strong> Apartament eficient în Yacht Kid, cu două camere și balcon. Oferă un spațiu de living generos și un dormitor confortabil, ideal pentru un stil de viață urban.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
-                    <a href="apartament-b27.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/4p.png') center/cover no-repeat;">
@@ -115,7 +114,6 @@
                     <p><strong>Detalii:</strong> 3 camere | 68.0 mp utili | 126.2 mp totali | Etaj 5 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Apartament luxos în complexul Prima Vista, cu 3 camere și balcoane impresionante totalizând 58.2 mp. Oferă o vedere panoramică și spații generoase de locuit.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
-                    <a href="apartament-P26.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png') center/cover no-repeat;">
@@ -124,7 +122,6 @@
                     <p><strong>Detalii:</strong> 3 camere | 68.5 mp utili | 115.4 mp totali | Etaj 4 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Apartament elegant în Prima Vista, cu 3 camere și multiple balcoane (46.9 mp în total). Perfect pentru cei care doresc spațiu extra și posibilități de relaxare în aer liber.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
-                    <a href="apartament-P21.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png') center/cover no-repeat;">
@@ -133,7 +130,6 @@
                     <p><strong>Detalii:</strong> 4 camere | 149.9 mp utili | 149.9 mp totali | Etaj 10 și 11 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Penthouse spectaculos pe două niveluri în Prima Vista. Cu 4 camere și o suprafață generoasă, oferă un living impresionant și dormitoare spațioase. Ideal pentru cei care caută lux și exclusivitate.</p>
                     <p><strong>Preț:</strong> 1800 euro</p>
-                    <a href="apartament-P51.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <a href="#" class="carousel-btn prev">❮</a>
@@ -193,6 +189,34 @@
             </div>
         </section>
     </main>
+
+    <div id="apartmentModal" class="modal">
+        <span class="close">×</span>
+        <div class="modal-content">
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/1p.png" alt="Apartament A.2.5 - Yacht Kid" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/2p.png" alt="Apartament B.1.10 - Yacht Kid" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/3p.png" alt="Apartament B.2.7 - Yacht Kid" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/4p.png" alt="Apartament B.2.9 - Yacht Kid" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/5p.png" alt="Apartament Prima 26 - Prima Vista" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/1p.png" alt="Apartament Prima 21 - Prima Vista" width="1350" height="900">
+            </div>
+            <div class="modal-slide">
+                <img src="https://www.primavista.ro/wp-content/uploads/2023/04/2p.png" alt="Penthouse Prima 51 - Prima Vista" width="1350" height="900">
+            </div>
+            <a class="modal-btn modal-prev">❮</a>
+            <a class="modal-btn modal-next">❯</a>
+        </div>
     </div>
 
     <script>
@@ -258,13 +282,10 @@
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        if (targetId) {
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
@@ -284,51 +305,6 @@
                 showSlide(currentSlide + 1);
             }, 5000);
         });
-    <script>
-    // Main carousel script
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    let currentSlide = 0;
-
-    function showSlide(n) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (n + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-
-    prevBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        showSlide(currentSlide - 1);
-    });
-    nextBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        showSlide(currentSlide + 1);
-    });
-
-    // View Gallery button script
-    document.querySelectorAll('a.btn-view-gallery').forEach(button => {
-        button.addEventListener('click', function (e) {
-            e.preventDefault();
-            window.location.href = this.getAttribute('href');
-        });
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            if (targetId) {
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    });
-</script>
+    </script>
 
 </body></html>
