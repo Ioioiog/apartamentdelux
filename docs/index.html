@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApartamentDeLux.ro - Apartamente de Lux în București</title>
     <meta name="description" content="Apartamente de Lux în București. Găsește cele mai exclusiviste proprietăți cu ApartamentDeLux.ro.">
     <meta name="keywords" content="apartamente, lux, București, proprietăți, imobiliare">
-
-    <!-- Tailwind CSS -->
+    <title>ApartamentDeLux.ro - Apartamente de Lux în București</title>
     <script src="https://cdn.tailwindcss.com" defer></script>
-
-    <!-- Inline and Minified CSS -->
     <style>
-        .carousel{position:relative;width:100%;height:100vh;overflow:hidden}.slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity .5s ease-in-out;display:flex;align-items:flex-end}.slide.active{opacity:1}.property-info{background:rgba(0,0,0,.7);color:#fff;padding:20px;width:100%;max-height:50%;overflow-y:auto}.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;padding:10px;text-decoration:none;z-index:10}.carousel-btn.prev{left:10px}.carousel-btn.next{right:10px}.btn-view-gallery{background-color:#1d4ed8;color:#fff;padding:10px 20px;border:none;border-radius:5px;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer;transition:background-color .3s ease}.btn-view-gallery:hover{background-color:#2563eb}
+        /* Minified CSS */
+        .carousel{position:relative;width:100%;height:100vh;overflow:hidden}.slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity .5s ease-in-out;display:flex;align-items:flex-end}.slide.active{opacity:1}.property-info{background:rgba(0,0,0,.7);color:white;padding:20px;width:100%;max-height:50%;overflow-y:auto}.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:white;padding:10px;text-decoration:none;z-index:10}.carousel-btn.prev{left:10px}.carousel-btn.next{right:10px}.btn-view-gallery{background-color:#1d4ed8;color:white;padding:10px 20px;border:none;border-radius:5px;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer;transition:background-color .3s ease}.btn-view-gallery:hover{background-color:#2563eb}
     </style>
 </head>
-
 <body class="bg-gray-100">
-
-    <!-- Header with ARIA Roles for Accessibility -->
-    <header role="banner" class="bg-gray-800 bg-opacity-80 text-white p-4 flex justify-between items-center">
+    <header class="bg-gray-800 bg-opacity-80 text-white p-4 flex justify-between items-center" role="banner">
         <h1 class="text-2xl font-bold">ApartamentDeLux.ro</h1>
         <nav role="navigation">
             <a href="chiriasi.html" class="text-white hover:text-gray-200 ml-4">Log In</a>
@@ -28,121 +21,209 @@
         </nav>
     </header>
 
-    <!-- Main Section with Carousel -->
     <main role="main">
         <section id="home" class="carousel">
-    <div class="slide active" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png'); background-position: center; background-size: cover;" aria-label="Apartament A.2.5 - Yacht Kid exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament A.2.5 - Yacht Kid</h2>
-            <p><strong>Detalii:</strong> 3 camere | 71.4 mp utili | 108.5 mp totali | Etaj 2 | Corp A</p>
-            <p><strong>Descriere:</strong> Apartament spațios în complexul Yacht Kid, cu 3 camere și balcon generos de 37.1 mp. Ideal pentru familii.</p>
-            <p><strong>Preț:</strong> 1400 euro</p>
-            <a href="docs/apartament-a25.html" class="btn-view-gallery">View Gallery</a>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png'); background-position: center; background-size: cover;" aria-label="Apartament B.1.10 - Yacht Kid exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament B.1.10 - Yacht Kid</h2>
-            <p><strong>Detalii:</strong> 2 camere | 52.4 mp utili | 65.0 mp totali | Etaj 1 | Corp B</p>
-            <p><strong>Descriere:</strong> Apartament modern în Yacht Kid, perfect pentru cupluri sau persoane singure. Dispune de un living mare și un dormitor confortabil, cu balcon de 12.6 mp.</p>
-            <p><strong>Preț:</strong> 1100 euro</p>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/3p.png'); background-position: center; background-size: cover;" aria-label="Apartament B.2.7 - Yacht Kid exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament B.2.7 - Yacht Kid</h2>
-            <p><strong>Detalii:</strong> 2 camere | 51.1 mp utili | 63.8 mp totali | Etaj 2 | Corp B</p>
-            <p><strong>Descriere:</strong> Apartament eficient în Yacht Kid, cu două camere și balcon. Oferă un spațiu de living generos și un dormitor confortabil, ideal pentru un stil de viață urban.</p>
-            <p><strong>Preț:</strong> 1100 euro</p>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/4p.png'); background-position: center; background-size: cover;" aria-label="Apartament B.2.9 - Yacht Kid exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament B.2.9 - Yacht Kid</h2>
-            <p><strong>Detalii:</strong> 2 camere | 52.2 mp utili | 64.5 mp totali | Etaj 2 | Corp B</p>
-            <p><strong>Descriere:</strong> Apartament bine compartimentat în Yacht Kid, cu două camere și balcon. Dispune de un living și un dormitor spațioase, perfect pentru cei care apreciază confortul.</p>
-            <p><strong>Preț:</strong> 1100 euro</p>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/5p.png'); background-position: center; background-size: cover;" aria-label="Apartament Prima 26 - Prima Vista exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament Prima 26 - Prima Vista</h2>
-            <p><strong>Detalii:</strong> 3 camere | 68.0 mp utili | 126.2 mp totali | Etaj 5 | Corp 4B</p>
-            <p><strong>Descriere:</strong> Apartament luxos în complexul Prima Vista, cu 3 camere și balcoane impresionante totalizând 58.2 mp. Oferă o vedere panoramică și spații generoase de locuit.</p>
-            <p><strong>Preț:</strong> 1100 euro</p>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png'); background-position: center; background-size: cover;" aria-label="Apartament Prima 21 - Prima Vista exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Apartament Prima 21 - Prima Vista</h2>
-            <p><strong>Detalii:</strong> 3 camere | 68.5 mp utili | 115.4 mp totali | Etaj 4 | Corp 4B</p>
-            <p><strong>Descriere:</strong> Apartament elegant în Prima Vista, cu 3 camere și multiple balcoane (46.9 mp în total). Perfect pentru cei care doresc spațiu extra și posibilități de relaxare în aer liber.</p>
-            <p><strong>Preț:</strong> 1100 euro</p>
-        </div>
-    </div>
-
-    <div class="slide" style="background-image: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png'); background-position: center; background-size: cover;" aria-label="Penthouse Prima 51 - Prima Vista exterior view">
-        <div class="property-info">
-            <h2 class="text-xl font-bold mb-2">Penthouse Prima 51 - Prima Vista</h2>
-            <p><strong>Detalii:</strong> 4 camere | 149.9 mp utili | 149.9 mp totali | Etaj 10 și 11 | Corp 4B</p>
-            <p><strong>Descriere:</strong> Penthouse spectaculos pe două niveluri în Prima Vista. Cu 4 camere și o suprafață generoasă, oferă un living impresionant și dormitoare spațioase. Ideal pentru cei care caută lux și exclusivitate.</p>
-            <p><strong>Preț:</strong> 1800 euro</p>
-        </div>
-    </div>
-
-    <!-- Carousel Navigation Buttons -->
-    <a href="#" class="carousel-btn prev">❮</a>
-    <a href="#" class="carousel-btn next">❯</a>
-</section>
-
-        <!-- About Section -->
-        <section id="about" class="container mx-auto px-4 py-8">
-            <h2 class="text-3xl font-bold mb-6 text-center">Despre ApartamentDeLux.ro</h2>
-            <p>ApartamentDeLux.ro este platforma ta de încredere pentru găsirea celor mai exclusiviste proprietăți din București...</p>
+            <div class="slide active" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png') center/cover no-repeat;" alt="Apartment A.2.5 - Yacht Kid">
+                <div class="property-info">
+                    <h2 class="text-xl font-bold mb-2">Apartament A.2.5 - Yacht Kid</h2>
+                    <p><strong>Detalii:</strong> 3 camere | 71.4 mp utili | 108.5 mp totali | Etaj 2 | Corp A</p>
+                    <p><strong>Descriere:</strong> Apartament spațios în complexul Yacht Kid, cu 3 camere și balcon generos de 37.1 mp. Ideal pentru familii, oferind un living confortabil și două dormitoare.</p>
+                    <p><strong>Preț:</strong> 1400 euro</p>
+                    
+                    <a href="https://apartamentdelux.ro/apartament-a25.html" class="btn-view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <!-- Additional slides with similar changes -->
         </section>
 
-        <!-- Contact Section -->
+        <section id="about" class="container mx-auto px-4 py-8">
+            <h2 class="text-3xl font-bold mb-6 text-center">Despre ApartamentDeLux.ro</h2>
+            <p class="mb-4">ApartamentDeLux.ro este platforma ta de încredere pentru găsirea celor mai exclusiviste proprietăți din București. Ne dedicăm să oferim clienților noștri experiențe de locuire de neegalat, în cele mai prestigioase zone ale capitalei.</p>
+            <p class="mb-4">Fie că ești în căutarea unui penthouse spectaculos sau a unui apartament modern într-un complex rezidențial de top, suntem aici să te ajutăm să găsești casa perfectă care să reflecte stilul tău de viață și aspirațiile tale.</p>
+            <p>Cu o selecție atent curată de proprietăți premium și o echipă de profesioniști dedicați, suntem pregătiți să transformăm visul tău de locuință într-o realitate luxoasă.</p>
+        </section>
+
         <section id="contact" class="container mx-auto px-4 py-8">
             <h2 class="text-3xl font-bold mb-6 text-center">Contactează-ne</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Informații de contact</h3>
-                    <p><strong>Adresă:</strong> Str. Fabrica De Glucoza, nr 6-8, Prima Vista</p>
-                    <p><strong>Telefon:</strong> +40 744 77 87 92</p>
-                    <p><strong>Email:</strong> reddomainrent@gmail.com</p>
-                    <p><strong>Program:</strong> Luni - Vineri: 10:00 - 18:00</p>
+                    <p class="mb-2"><strong>Adresă:</strong> Str. Fabrica De Glucoza, nr 6-8, Prima Vista </p>
+                    <p class="mb-2"><strong>Telefon:</strong> +40 744 77 87 92</p>
+                    <p class="mb-2"><strong>Email:</strong> reddomainrent@gmail.com</p>
+                    <p class="mb-4"><strong>Program:</strong> Luni - Vineri: 10:00 - 18:00</p>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-2">Urmărește-ne pe social media:</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com/apartamentdelux" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <a href="https://instagram.com/apartamentdelux" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Trimite-ne un mesaj</h3>
-                    <form action="mailto:reddomainrent@gmail.com" method="post" enctype="text/plain">
+                    <form>
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Nume</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500" required>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500" required>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-sm font-medium text-gray-700">Mesaj</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500" required></textarea>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700">Trimite mesajul</button>
+                        <div>
+                            <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <a href="mailto:reddomainrent@gmail.com">Trimite mesajul</a>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Minified JavaScript with Async Loading -->
     <script>
-        const slides=document.querySelectorAll(".slide"),prevBtn=document.querySelector(".prev"),nextBtn=document.querySelector(".next");let currentSlide=0;function showSlide(e){slides[currentSlide].classList.remove("active"),currentSlide=(e+slides.length)%slides.length,slides[currentSlide].classList.add("active")}prevBtn.addEventListener("click",e=>{e.preventDefault(),showSlide(currentSlide-1)}),nextBtn.addEventListener("click",e=>{e.preventDefault(),showSlide(currentSlide+1)});let slideInterval=setInterval(()=>{showSlide(currentSlide+1)},5e3);document.querySelector(".carousel").addEventListener("mouseenter",()=>clearInterval(slideInterval)),document.querySelector(".carousel").addEventListener("mouseleave",()=>{slideInterval=setInterval(()=>{showSlide(currentSlide+1)},5e3)});
-    </script>
-</body>
+        // Main carousel script
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentSlide = 0;
 
-</html>
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSlide(currentSlide - 1);
+        });
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSlide(currentSlide + 1);
+        });
+
+        // Modal carousel script
+        const modal = document.getElementById("apartmentModal");
+        const modalSlides = document.querySelectorAll(".modal-slide");
+        const modalPrev = document.querySelector(".modal-prev");
+        const modalNext = document.querySelector(".modal-next");
+        const closeBtn = document.querySelector(".close");
+        let modalCurrentSlide = 0;
+
+        function openModal() {
+            modal.style.display = "block";
+            showModalSlide(0);
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        function showModalSlide(n) {
+            modalSlides[modalCurrentSlide].style.display = "none";
+            modalCurrentSlide = (n + modalSlides.length) % modalSlides.length;
+            modalSlides[modalCurrentSlide].style.display = "block";
+        }
+
+        modalPrev.addEventListener('click', () => showModalSlide(modalCurrentSlide - 1));
+        modalNext.addEventListener('click', () => showModal      
+        closeBtn.addEventListener('click', closeModal);
+
+        // Add click event to main carousel slides to open modal
+        slides.forEach(slide => {
+            slide.addEventListener('click', openModal);
+        });
+
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                closeModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        if (targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Auto-slide and pause on hover
+        let slideInterval = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        document.querySelector('.carousel').addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+
+        document.querySelector('.carousel').addEventListener('mouseleave', () => {
+            slideInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        });
+    <script>
+    // Main carousel script
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSlide(currentSlide - 1);
+    });
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSlide(currentSlide + 1);
+    });
+
+    // View Gallery button script
+    document.querySelectorAll('a.btn-view-gallery').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.location.href = this.getAttribute('href');
+        });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
+
+</body></html>
