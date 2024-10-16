@@ -1,43 +1,96 @@
-<!DOCTYPE html>
+improve this file <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apartamente de Lux în București. Găsește cele mai exclusiviste proprietăți cu ApartamentDeLux.ro.">
-    <meta name="keywords" content="apartamente, lux, București, proprietăți, imobiliare">
     <title>ApartamentDeLux.ro - Apartamente de Lux în București</title>
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Minified CSS */
-        .carousel{position:relative;width:100%;height:100vh;overflow:hidden}.slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity .5s ease-in-out;display:flex;align-items:flex-end}.slide.active{opacity:1}.property-info{background:rgba(0,0,0,.7);color:white;padding:20px;width:100%;max-height:50%;overflow-y:auto}.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:white;padding:10px;text-decoration:none;z-index:10}.carousel-btn.prev{left:10px}.carousel-btn.next{right:10px}.btn-view-gallery{background-color:#1d4ed8;color:white;padding:10px 20px;border:none;border-radius:5px;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer;transition:background-color .3s ease}.btn-view-gallery:hover{background-color:#2563eb}
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: flex-end;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .property-info {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            max-height: 50%;
+            overflow-y: auto;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            z-index: 10;
+        }
+        .carousel-btn.prev { left: 10px; }
+        .carousel-btn.next { right: 10px; }
+        .btn-view-gallery {
+            background-color: #1d4ed8; /* Blue background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Inline block */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Transition for hover effect */
+        }
+        .btn-view-gallery:hover {
+            background-color: #2563eb; /* Lighter blue on hover */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gray-800 bg-opacity-80 text-white p-4 flex justify-between items-center" role="banner">
+    <header class="bg-gray-800 bg-opacity-80 text-white p-4 flex justify-between items-center">
         <h1 class="text-2xl font-bold">ApartamentDeLux.ro</h1>
-        <nav role="navigation">
+        <nav>
             <a href="chiriasi.html" class="text-white hover:text-gray-200 ml-4">Log In</a>
             <a href="#contact" class="text-white hover:text-gray-200 ml-4">Contact</a>
         </nav>
     </header>
 
-    <main role="main">
+    <main>
         <section id="home" class="carousel">
-            <div class="slide active" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png') center/cover no-repeat;" alt="Apartment A.2.5 - Yacht Kid">
+            <div class="slide active" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png') center/cover no-repeat;">
                 <div class="property-info">
                     <h2 class="text-xl font-bold mb-2">Apartament A.2.5 - Yacht Kid</h2>
                     <p><strong>Detalii:</strong> 3 camere | 71.4 mp utili | 108.5 mp totali | Etaj 2 | Corp A</p>
                     <p><strong>Descriere:</strong> Apartament spațios în complexul Yacht Kid, cu 3 camere și balcon generos de 37.1 mp. Ideal pentru familii, oferind un living confortabil și două dormitoare.</p>
                     <p><strong>Preț:</strong> 1400 euro</p>
-                    
                     <a href="apartament-a25.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
-        <div class="property-info">
+            </div>
+            <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png') center/cover no-repeat;">
+                <div class="property-info">
                     <h2 class="text-xl font-bold mb-2">Apartament B.1.10 - Yacht Kid</h2>
                     <p><strong>Detalii:</strong> 2 camere | 52.4 mp utili | 65.0 mp totali | Etaj 1 | Corp B</p>
                     <p><strong>Descriere:</strong> Apartament modern în Yacht Kid, perfect pentru cupluri sau persoane singure. Dispune de un living mare și un dormitor confortabil, cu balcon de 12.6 mp.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
+                    <a href="apartament-b110.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/3p.png') center/cover no-repeat;">
@@ -46,6 +99,7 @@
                     <p><strong>Detalii:</strong> 2 camere | 51.1 mp utili | 63.8 mp totali | Etaj 2 | Corp B</p>
                     <p><strong>Descriere:</strong> Apartament eficient în Yacht Kid, cu două camere și balcon. Oferă un spațiu de living generos și un dormitor confortabil, ideal pentru un stil de viață urban.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
+                    <a href="apartament-b27.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/4p.png') center/cover no-repeat;">
@@ -62,6 +116,7 @@
                     <p><strong>Detalii:</strong> 3 camere | 68.0 mp utili | 126.2 mp totali | Etaj 5 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Apartament luxos în complexul Prima Vista, cu 3 camere și balcoane impresionante totalizând 58.2 mp. Oferă o vedere panoramică și spații generoase de locuit.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
+                    <a href="apartament-P26.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/1p.png') center/cover no-repeat;">
@@ -70,6 +125,7 @@
                     <p><strong>Detalii:</strong> 3 camere | 68.5 mp utili | 115.4 mp totali | Etaj 4 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Apartament elegant în Prima Vista, cu 3 camere și multiple balcoane (46.9 mp în total). Perfect pentru cei care doresc spațiu extra și posibilități de relaxare în aer liber.</p>
                     <p><strong>Preț:</strong> 1100 euro</p>
+                    <a href="apartament-P21.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <div class="slide" style="background: url('https://www.primavista.ro/wp-content/uploads/2023/04/2p.png') center/cover no-repeat;">
@@ -78,11 +134,11 @@
                     <p><strong>Detalii:</strong> 4 camere | 149.9 mp utili | 149.9 mp totali | Etaj 10 și 11 | Corp 4B</p>
                     <p><strong>Descriere:</strong> Penthouse spectaculos pe două niveluri în Prima Vista. Cu 4 camere și o suprafață generoasă, oferă un living impresionant și dormitoare spațioase. Ideal pentru cei care caută lux și exclusivitate.</p>
                     <p><strong>Preț:</strong> 1800 euro</p>
+                    <a href="apartament-P51.html" class="btn-view-gallery">View Gallery</a>
                 </div>
             </div>
             <a href="#" class="carousel-btn prev">❮</a>
             <a href="#" class="carousel-btn next">❯</a>
-        </section>
         </section>
 
         <section id="about" class="container mx-auto px-4 py-8">
@@ -118,15 +174,15 @@
                     <form>
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Nume</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required="">
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required="">
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-sm font-medium text-gray-700">Mesaj</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required></textarea>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required=""></textarea>
                         </div>
                         <div>
                             <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -138,6 +194,7 @@
             </div>
         </section>
     </main>
+    </div>
 
     <script>
         // Main carousel script
@@ -185,7 +242,7 @@
         }
 
         modalPrev.addEventListener('click', () => showModalSlide(modalCurrentSlide - 1));
-        modalNext.addEventListener('click', () => showModal      
+        modalNext.addEventListener('click', () => showModalSlide(modalCurrentSlide + 1));
         closeBtn.addEventListener('click', closeModal);
 
         // Add click event to main carousel slides to open modal
